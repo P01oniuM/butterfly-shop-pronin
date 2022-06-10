@@ -1,0 +1,28 @@
+.order {
+  background-color: rgba($color-dark, .1);
+}
+
+.order-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+  margin-top: 130px;
+  color: $color-dark;
+}
+
+.order-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  margin-top: 40px;
+  color: $color-dark;
+}
+
+.order-inner {
+  @include inner();
+}
+

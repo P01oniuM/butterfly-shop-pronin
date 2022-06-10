@@ -1,0 +1,50 @@
+.header {
+  font-family: $font;
+  background-color: $color-dark;
+}
+
+.header-inner {
+  @include inner();
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
+  margin: 13px 0;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  margin-left: 10px;
+}
+
+.menu-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 33px 25px;
+  text-transform: uppercase;
+    &:hover {
+      background-color: $color-red;
+    }
+    &:active {
+      background-color: $color-red-active;
+    }
+}

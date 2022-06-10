@@ -1,19 +1,126 @@
 <!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой первый проект</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-    <div class="promo">
-        <div class="promo-inner">
-            <h1 class="promo-ttl">Заголовок сайта</h1>
-            <p class="promo-slogan">Описание сайта, типа тут все самое офиггенное и опупенное!</p>
-        </div>
-    </div>
 
-    <script src="scripts/script.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой первый проект</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-wrap">
+        <a href="" class="logo">Butterfly</a>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="" class="menu-link">Каталог</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">Отзывы</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">Контакты</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="promo">
+      <div class="promo-fade">
+        <div class="promo-inner">
+          <h1 class="promo-title">Индивидуальный пошив<br>галсутков-бабочек</h1>
+          <div class="btn-promo-wrap">
+            <button class="btn-promo">Заказать бабочку</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="examples">
+      <div class="examples-inner">
+        <h2 class="examples-title">Наши работы</h2>
+        <div class="examples-wrap">
+          <div class="examples-items" style="
+          background: url('/img/examples-pic-1.png') no-repeat;
+          height: 304px;
+          width: 304px;">
+            <p class="examples-text">Бабочка такая</p>
+          </div>
+          <div class="examples-items" style="
+          background: url('img/examples-pic-2.jpg') no-repeat;
+          height: 304px;
+          width: 304px;">
+            <p class="examples-text">Бабочка растакая</p>
+          </div>
+          <div class="examples-items" style="
+          background: url('/img/examples-pic-3.png') no-repeat;
+          height: 304px;
+          width: 304px;">
+            <p class="examples-text">Бабочка сякая</p>
+          </div>
+          <div class="examples-items" style="
+          background: url('img/examples-pic-4.png') no-repeat;
+          height: 304px;
+          width: 304px;">
+            <p class="examples-text">Кривая</p>
+          </div>
+        </div>
+        <div class="btn-examples-wrap">
+          <button class="btn-examples">Все бабочки</button>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="order-inner">
+        <h2 class="order-title">Закажи пошив</h2>
+        <p class="order-text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На
+          встрече он снимет мерки и поможет определиться с тканью.</p>
+        <div class="form-wrapper">
+          <form action="#" class="form">
+            <div class="form-field">
+              <label for="name" class="form-label">Ваше имя</label>
+              <input id="name" class="form-input" type="text">
+            </div>
+            <div class="form-field">
+              <label for="phone-form" class="form-label">Телефон</label>
+              <input id="phone-form" class="form-input" type="text">
+            </div>
+            <button class="btn-form">Заказать</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-wrap">
+        <a href="" class="logo logo-footer">Butterfly</a>
+        <a href="tel:+78128008080" class="phone">+7 812 800-80-80</a>
+        <ul class="social-icons">
+          <li class="social-icon">
+            <a href="" class="social-link" style="background-image: url('img/inst-icon.svg');"></a>
+          </li>
+          <li class="social-icon">
+            <a href="" class="social-link" style="background-image: url('img/fb-icon.svg');"></a>
+          </li>
+          <li class="social-icon">
+            <a href="" class="social-link" style="background-image: url('img/telegram-icon.svg');"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
 </body>
+
 </html>

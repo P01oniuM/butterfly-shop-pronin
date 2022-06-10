@@ -1,28 +1,43 @@
 .promo {
-  padding: 50px 0;
-  background-color: lightsteelblue;
-  border-radius: 10px;
+  font-family: $font;
+  background: url("../img/promo-pic.jpg") no-repeat;
+  background-size: 100%;
 }
 
 .promo-inner {
-  margin: 0 auto;
-  width: 1024px;
-
-  @media (max-width: 1279px) {
-    width: auto;
-    max-width: 1024px;
-  }
+  @include inner();
 }
 
-.promo-ttl {
-  font-size: $h1-fz-desktop;
-  font-weight: $h1-fw;
+.promo-title {
+  padding: 200px 0 100px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 98px;
+  color: #fff;
+}
 
-  @media (max-width: 1279px) {
-    font-size: $h1-fz-tablet;
-  }
+.promo-fade {
+  background-color: rgba(51, 51, 51, .4);
+}
 
-  @media (max-width: 669px) {
-    font-size: $h1-fz-mobile;
+.btn-promo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 214px;
+}
+
+.btn-promo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 57px;
+  background-color: $color-red;
+  border-radius: 6px;
+  border: none;
+  color:#fff;
+  padding: 30px 48px;
+  &:active {
+    background-color: $color-red-active;
   }
 }

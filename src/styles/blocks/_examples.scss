@@ -1,0 +1,64 @@
+.examples-inner {
+  @include inner();
+}
+
+.examples-title {
+  color: $color-dark;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 87px;
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+
+.examples-text {
+  color: #fff;
+}
+
+.examples-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.examples-items {
+  display: flex;
+  // justify-content: center;
+}
+
+.examples-text {
+  align-self: flex-end;
+  flex-basis: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.btn-examples {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 57px;
+  background-color: $color-red;
+  border-radius: 6px;
+  border: none;
+  color:#fff;
+  padding: 30px 48px;
+  margin-top: 150px;
+  &:active {
+    background-color: $color-red-active;
+  }
+}
+
+.btn-examples-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+}
