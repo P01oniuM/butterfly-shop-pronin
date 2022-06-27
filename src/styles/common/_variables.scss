@@ -7,9 +7,15 @@ $h1-fz-desktop: 48px;
 $h1-fw: 400;
 
 // colors
-$color-dark:#333333;
-$color-red:#FF2D2D;
-$color-red-active:#c01919
+$color-dark: #333333;
+$color-orange: #FF2D2D;
+$color-orange-active: #ff2d2de1;
+
 // indents
+$gap: 30px;
+$gap-half: 15px;
 
 // breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;

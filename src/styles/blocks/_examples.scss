@@ -12,6 +12,20 @@
   text-align: center;
   margin-top: 130px;
   margin-bottom: 100px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 60px;
+    line-height: 82px;
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 36px;
+    line-height: 49px;
+    margin-top: 90px;
+    margin-bottom: 60px;
+  }
 }
 
 .examples-text {
@@ -20,18 +34,21 @@
 
 .examples-wrap {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-}
 
-.examples-items {
-  display: flex;
-  // justify-content: center;
+  @media (max-width: $tablet-max) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
 }
 
 .examples-text {
-  align-self: flex-end;
-  flex-basis: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -49,9 +66,10 @@
   background-color: $color-red;
   border-radius: 6px;
   border: none;
-  color:#fff;
+  color: #fff;
   padding: 30px 48px;
   margin-top: 150px;
+
   &:active {
     background-color: $color-red-active;
   }
@@ -61,4 +79,8 @@
   display: flex;
   justify-content: center;
   margin-bottom: 160px;
+}
+
+.examples-items {
+  position: relative;
 }
